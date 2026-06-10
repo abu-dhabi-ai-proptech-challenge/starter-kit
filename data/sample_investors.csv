@@ -1,0 +1,31 @@
+investor_id,investor_type,preferred_sector,preferred_district,capital_range_aed,risk_profile,investment_horizon,strategic_fit_score
+INV-001,sovereign_fund,mixed_use,Saadiyat Island,500M-2B,conservative,long,94
+INV-002,private_equity,hospitality,Yas Island,100M-500M,aggressive,medium,87
+INV-003,family_office,residential,Al Reem Island,50M-200M,balanced,long,81
+INV-004,developer,residential,Zayed City,200M-1B,aggressive,long,89
+INV-005,reit,commercial,Al Maryah Island,100M-400M,conservative,long,85
+INV-006,institutional,logistics,Mussafah,150M-600M,balanced,medium,78
+INV-007,hnwi,residential,Al Bateen,10M-50M,conservative,long,66
+INV-008,private_equity,commercial,Masdar City,80M-300M,balanced,medium,83
+INV-009,sovereign_fund,community,Khalifa City,300M-1B,conservative,long,90
+INV-010,developer,mixed_use,Al Raha Beach,150M-700M,aggressive,medium,86
+INV-011,family_office,hospitality,Corniche,30M-120M,balanced,medium,72
+INV-012,reit,residential,Khalifa City,100M-350M,conservative,long,79
+INV-013,institutional,commercial,Al Reem Island,200M-800M,balanced,long,84
+INV-014,hnwi,hospitality,Saadiyat Island,15M-60M,aggressive,short,64
+INV-015,private_equity,logistics,Mussafah,120M-450M,aggressive,short,76
+INV-016,developer,community,Al Shamkha,100M-400M,balanced,long,82
+INV-017,sovereign_fund,industrial,Masdar City,400M-1.5B,balanced,long,92
+INV-018,family_office,mixed_use,Al Maryah Island,40M-150M,conservative,medium,74
+INV-019,institutional,residential,Mohammed Bin Zayed City,180M-650M,balanced,long,80
+INV-020,reit,hospitality,Yas Island,90M-320M,balanced,medium,77
+INV-021,hnwi,commercial,Corniche,8M-40M,balanced,medium,61
+INV-022,developer,residential,Al Shamkha,130M-500M,aggressive,medium,75
+INV-023,private_equity,mixed_use,Zayed City,150M-550M,aggressive,long,88
+INV-024,sovereign_fund,hospitality,Saadiyat Island,600M-2.5B,conservative,long,95
+INV-025,family_office,community,Khalifa City,25M-100M,conservative,long,70
+INV-026,institutional,industrial,Mussafah,250M-900M,conservative,long,81
+INV-027,reit,commercial,Masdar City,110M-380M,balanced,long,78
+INV-028,hnwi,residential,Al Raha Beach,12M-55M,balanced,medium,68
+INV-029,developer,hospitality,Al Raha Beach,170M-750M,aggressive,medium,84
+INV-030,private_equity,residential,Al Reem Island,140M-520M,balanced,medium,82

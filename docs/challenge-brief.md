@@ -1,0 +1,58 @@
+# Challenge Brief
+
+## Abu Dhabi AI City Challenge
+
+**Building the Intelligence Layer for Land, Investment and Communities**
+
+## The premise
+
+Cities generate enormous amounts of signal — parcels, transactions, capital flows, service demand, movement patterns. Most of it sits in silos, readable by specialists and invisible to decision-makers. The teams that learn to turn that signal into intelligence will shape how cities are planned, funded, and lived in.
+
+In one day at Hub71, you'll build a working AI prototype that makes some part of a city legible and actionable: a scoring engine, a matching system, a copilot, a simulation, an agent. Something real, something demoable.
+
+## What you're building
+
+A **working prototype** in one of four tracks:
+
+1. **Land Intelligence** — make land understandable: parcel scoring, land-use recommendation, development potential analysis
+2. **Investment Intelligence** — connect capital to opportunity: investor–asset matching, market signal analysis, deal intelligence
+3. **Future Communities** — improve how people live: service demand forecasting, mobility insight, resident experience
+4. **Decision Intelligence** — help leaders act: decision copilots, automated briefings, scenario analysis
+
+See [`tracks.md`](tracks.md) for detailed prompts and example ideas per track.
+
+## The day
+
+| Phase | What happens |
+|---|---|
+| Morning | Kickoff, track briefings, team formation, building begins |
+| Midday | Build, with mentors circulating |
+| Afternoon | Build, submission deadline announced in advance |
+| Evening | 3-minute demos, judging, awards |
+
+Exact timings are announced at the venue and on Discord (DISCORD_URL).
+
+## Rules
+
+- **Build on the day.** You may arrive with ideas, sketches, and familiarity with the data, but the prototype is built during the event. Standard libraries, frameworks, and your own prior open-source utilities are fine.
+- **Teams of 2–5.** Solo builders can form teams at kickoff.
+- **Any stack.** Use the [`project-template`](../examples/) and [example agents](../examples/) if helpful, or bring your own stack entirely.
+- **Any model.** Hosted APIs, open-weight models, local models — all fine. The example code runs without any API keys.
+- **Synthetic data provided.** Use the datasets in [`data/`](../data/), bring public datasets, or generate your own. No scraping of private or personal data.
+- **Demo or it didn't happen.** Judging is based on what works in your demo, not what's on your roadmap.
+- **Submit on time.** Via GitHub Issue in the `submissions` repo before the deadline. Late submissions are not judged.
+
+## What a great submission looks like
+
+- A focused problem, clearly framed
+- A prototype that actually runs and shows AI doing real work
+- Honest use of data — synthetic is fine, fabricated results are not
+- A demo that lands in under 3 minutes
+
+## Judging
+
+Five criteria, equally weighted: **Problem & relevance, Technical execution, Use of AI, Demo quality, Potential impact.** Details in [`judging-criteria.md`](judging-criteria.md).
+
+## Questions?
+
+Ask on Discord (DISCORD_URL), find a mentor at the venue, or open a Question issue in the `submissions` repo.

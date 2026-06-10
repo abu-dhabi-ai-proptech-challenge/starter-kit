@@ -1,0 +1,31 @@
+parcel_id,district,zone,land_use,parcel_size_sqm,current_status,infrastructure_score,development_potential_score,estimated_value_aed,recommended_use
+PRC-0001,Saadiyat Island,Z-MIX-01,mixed_use,12500,vacant,88,92,68750000,cultural_mixed_use
+PRC-0002,Al Reem Island,Z-RES-03,residential,8400,under_development,91,78,42000000,high_rise_residential
+PRC-0003,Yas Island,Z-HOS-02,hospitality,21000,vacant,85,89,94500000,resort_hospitality
+PRC-0004,Masdar City,Z-COM-01,commercial,6200,developed,93,61,27900000,innovation_offices
+PRC-0005,Khalifa City,Z-RES-01,residential,15800,vacant,72,81,33180000,low_rise_residential
+PRC-0006,Al Maryah Island,Z-COM-03,commercial,5400,developed,96,58,48600000,financial_offices
+PRC-0007,Mohammed Bin Zayed City,Z-RES-02,residential,18200,vacant,68,76,27300000,family_villas
+PRC-0008,Al Raha Beach,Z-MIX-02,mixed_use,9600,under_development,87,84,43200000,waterfront_mixed_use
+PRC-0009,Mussafah,Z-IND-01,industrial,32000,developed,74,55,25600000,light_logistics
+PRC-0010,Al Shamkha,Z-RES-01,residential,22500,vacant,63,79,24750000,affordable_housing
+PRC-0011,Zayed City,Z-MIX-01,mixed_use,28000,reserved,58,88,42000000,transit_oriented_development
+PRC-0012,Al Bateen,Z-RES-04,residential,7200,developed,90,52,46800000,premium_villas
+PRC-0013,Corniche,Z-COM-02,commercial,4800,developed,95,49,52800000,boutique_retail
+PRC-0014,Saadiyat Island,Z-RES-05,residential,11000,vacant,86,90,60500000,beachfront_residential
+PRC-0015,Yas Island,Z-COM-01,commercial,8800,vacant,84,82,39600000,entertainment_retail
+PRC-0016,Masdar City,Z-IND-02,industrial,14500,vacant,89,86,30450000,cleantech_manufacturing
+PRC-0017,Al Reem Island,Z-COM-02,commercial,3900,under_development,92,71,29250000,coworking_offices
+PRC-0018,Khalifa City,Z-CMU-01,community,9400,vacant,70,74,16920000,school_campus
+PRC-0019,Al Raha Beach,Z-HOS-01,hospitality,13200,vacant,86,87,59400000,marina_hotel
+PRC-0020,Mussafah,Z-IND-03,industrial,41000,vacant,66,72,28700000,ev_assembly_facility
+PRC-0021,Al Shamkha,Z-CMU-02,community,12800,reserved,61,68,14080000,healthcare_cluster
+PRC-0022,Zayed City,Z-RES-02,residential,19600,vacant,57,85,25480000,mid_rise_residential
+PRC-0023,Al Maryah Island,Z-MIX-03,mixed_use,6700,under_development,94,77,56950000,premium_mixed_use
+PRC-0024,Corniche,Z-HOS-03,hospitality,5600,developed,93,54,50400000,urban_boutique_hotel
+PRC-0025,Mohammed Bin Zayed City,Z-COM-01,commercial,10400,vacant,71,73,20800000,neighborhood_retail
+PRC-0026,Al Bateen,Z-MIX-02,mixed_use,8100,reserved,88,69,44550000,marina_mixed_use
+PRC-0027,Saadiyat Island,Z-CMU-01,community,16400,vacant,83,80,36080000,university_expansion
+PRC-0028,Yas Island,Z-RES-03,residential,14700,under_development,82,75,47775000,leisure_residential
+PRC-0029,Masdar City,Z-RES-01,residential,7800,vacant,90,83,23400000,sustainable_residential
+PRC-0030,Khalifa City,Z-COM-02,commercial,6900,vacant,69,77,15870000,community_retail

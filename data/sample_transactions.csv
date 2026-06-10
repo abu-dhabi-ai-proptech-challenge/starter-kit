@@ -1,0 +1,31 @@
+transaction_id,date,district,asset_type,transaction_value_aed,size_sqm,price_per_sqm,buyer_type
+TXN-0001,2025-09-03,Al Reem Island,apartment,2450000,142,17254,individual
+TXN-0002,2025-09-08,Saadiyat Island,villa,12800000,580,22069,individual
+TXN-0003,2025-09-15,Al Maryah Island,office,18500000,820,22561,corporate
+TXN-0004,2025-09-22,Yas Island,apartment,1980000,118,16780,individual
+TXN-0005,2025-09-29,Mussafah,warehouse,8400000,3200,2625,corporate
+TXN-0006,2025-10-04,Khalifa City,villa,5600000,420,13333,individual
+TXN-0007,2025-10-09,Al Raha Beach,apartment,3100000,165,18788,fund
+TXN-0008,2025-10-14,Masdar City,office,9200000,510,18039,corporate
+TXN-0009,2025-10-18,Zayed City,land,22000000,15000,1467,developer
+TXN-0010,2025-10-23,Corniche,retail,14500000,640,22656,corporate
+TXN-0011,2025-10-28,Al Bateen,villa,16200000,710,22817,individual
+TXN-0012,2025-11-02,Saadiyat Island,land,48000000,11000,4364,developer
+TXN-0013,2025-11-06,Al Reem Island,office,11800000,560,21071,fund
+TXN-0014,2025-11-11,Yas Island,hotel,86000000,9500,9053,fund
+TXN-0015,2025-11-16,Mohammed Bin Zayed City,villa,3900000,380,10263,individual
+TXN-0016,2025-11-20,Mussafah,land,12600000,28000,450,corporate
+TXN-0017,2025-11-25,Al Raha Beach,apartment,2750000,148,18581,individual
+TXN-0018,2025-12-01,Masdar City,land,18900000,12500,1512,developer
+TXN-0019,2025-12-05,Al Maryah Island,retail,21000000,880,23864,fund
+TXN-0020,2025-12-10,Khalifa City,apartment,1450000,105,13810,individual
+TXN-0021,2025-12-15,Al Shamkha,villa,2800000,350,8000,individual
+TXN-0022,2025-12-19,Corniche,apartment,4200000,190,22105,individual
+TXN-0023,2026-01-07,Zayed City,land,31000000,21000,1476,developer
+TXN-0024,2026-01-13,Saadiyat Island,apartment,5300000,210,25238,fund
+TXN-0025,2026-01-19,Yas Island,retail,9800000,460,21304,corporate
+TXN-0026,2026-01-26,Al Bateen,apartment,3650000,172,21221,individual
+TXN-0027,2026-02-02,Mussafah,warehouse,11200000,4100,2732,fund
+TXN-0028,2026-02-09,Al Reem Island,apartment,2280000,131,17405,individual
+TXN-0029,2026-02-16,Mohammed Bin Zayed City,land,9400000,16500,570,developer
+TXN-0030,2026-02-23,Masdar City,office,7600000,415,18313,corporate

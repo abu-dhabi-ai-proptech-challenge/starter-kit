@@ -1,0 +1,31 @@
+community_id,district,population_estimate,occupancy_rate,service_demand_index,mobility_score,resident_experience_score,optimization_opportunity
+COM-001,Al Reem Island,98000,0.91,72,81,78,expand_school_capacity
+COM-002,Saadiyat Island,32000,0.84,58,74,86,improve_last_mile_transit
+COM-003,Yas Island,41000,0.87,61,79,84,add_clinic_capacity
+COM-004,Khalifa City,156000,0.93,79,62,71,expand_school_capacity
+COM-005,Mohammed Bin Zayed City,189000,0.95,83,58,66,improve_bus_coverage
+COM-006,Al Shamkha,142000,0.92,85,54,63,add_clinic_capacity
+COM-007,Masdar City,18000,0.88,49,83,87,expand_retail_offering
+COM-008,Al Raha Beach,52000,0.89,57,77,82,improve_last_mile_transit
+COM-009,Al Maryah Island,14000,0.81,44,88,85,add_grocery_retail
+COM-010,Al Bateen,27000,0.86,47,80,84,improve_park_access
+COM-011,Corniche,38000,0.9,55,85,81,reduce_parking_pressure
+COM-012,Zayed City,64000,0.78,76,51,62,accelerate_transit_link
+COM-013,Mussafah,210000,0.94,88,49,58,add_worker_housing_services
+COM-014,Al Reem Island,46000,0.88,66,79,77,add_nursery_capacity
+COM-015,Khalifa City,87000,0.91,74,64,72,improve_cycle_paths
+COM-016,Saadiyat Island,12000,0.79,41,72,89,expand_retail_offering
+COM-017,Yas Island,23000,0.83,52,81,85,add_school_capacity
+COM-018,Mohammed Bin Zayed City,97000,0.94,81,57,65,add_clinic_capacity
+COM-019,Al Shamkha,76000,0.9,82,52,61,improve_bus_coverage
+COM-020,Masdar City,9000,0.85,38,86,90,add_community_events
+COM-021,Al Raha Beach,34000,0.87,53,75,80,improve_beach_access
+COM-022,Zayed City,29000,0.72,71,48,59,accelerate_transit_link
+COM-023,Corniche,44000,0.92,59,84,79,improve_park_access
+COM-024,Al Bateen,19000,0.84,45,78,83,reduce_parking_pressure
+COM-025,Mussafah,168000,0.95,86,47,56,improve_bus_coverage
+COM-026,Khalifa City,112000,0.92,77,61,69,expand_school_capacity
+COM-027,Al Maryah Island,8000,0.77,40,87,86,add_grocery_retail
+COM-028,Saadiyat Island,21000,0.82,50,73,88,improve_last_mile_transit
+COM-029,Yas Island,36000,0.86,57,80,83,add_clinic_capacity
+COM-030,Mohammed Bin Zayed City,134000,0.93,80,56,64,expand_school_capacity
