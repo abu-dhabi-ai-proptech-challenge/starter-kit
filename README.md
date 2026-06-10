@@ -2,7 +2,7 @@
 
 **Building the Intelligence Layer for Land, Investment and Communities**
 
-A one-day AI challenge hosted by **Cursor** and **eVoost AI** at **Hub71, Abu Dhabi**. In a single day, teams design and ship working AI prototypes that make a city's land, capital, and communities easier to understand and act on.
+A one-day AI challenge hosted by **[Cursor](https://cursor.com)** and **[eVoost AI](https://evoost.ai)** at **Hub71, Abu Dhabi**. In a single day, teams design and ship working AI prototypes that make a city's land, capital, and communities easier to understand and act on.
 
 This repo is your starting point: the challenge brief, the tracks, synthetic datasets, runnable example agents, and everything you need to go from idea to demo.
 

@@ -16,6 +16,8 @@ Land is the city's base layer, but raw parcel data — zoning codes, sizes, stat
 - A land-use recommender: given a parcel, what should be built there and why
 - A natural-language interface over parcel data ("show me underused commercial land near high-demand districts")
 - An anomaly finder that flags parcels whose status, value, or use looks inconsistent
+- An underutilized-land detector with monetization recommendations
+- A strategic land-allocation advisor: given city priorities, which parcels serve them best
 
 **Relevant data:** `sample_parcels.csv`, `sample_transactions.csv`
 **Example code:** [`examples/land-intelligence-agent/`](../examples/land-intelligence-agent/)
@@ -34,6 +36,8 @@ Investors have mandates; cities have assets. Matching them today is manual, slow
 - A market signal analyzer over transaction data: trends, momentum, pricing anomalies by district
 - A deal memo generator: given an asset and an investor profile, draft the one-page investment case
 - A portfolio construction tool that assembles district/asset mixes to fit a risk profile
+- An investor segmentation engine that detects demand signals before they show up in transactions
+- A capital-allocation recommender across districts and asset types
 
 **Relevant data:** `sample_investors.csv`, `sample_transactions.csv`, `sample_parcels.csv`
 **Example code:** [`examples/investment-matching-agent/`](../examples/investment-matching-agent/)
@@ -52,6 +56,8 @@ Communities generate demand for services, mobility, and experience — and the d
 - A mobility insight tool that finds districts where movement scores lag and proposes interventions
 - A resident experience dashboard that explains *why* a community scores low and what would move it
 - A community matching tool: given a household profile, which district fits best and why
+- A community operations copilot: amenity and service optimization for operators
+- A community performance scorer that explains what drives the score and what would move it
 
 **Relevant data:** `sample_communities.csv`, `sample_parcels.csv`
 
@@ -69,6 +75,8 @@ The hardest part of city data isn't collecting it — it's getting a clear answe
 - An automated morning briefing: what changed across land, investment, and communities, and what needs attention
 - A scenario tool: "if district X adds 5,000 residents, what happens to services, land demand, and prices?"
 - A recommendation engine that proposes the next three actions for a given district, with evidence
+- A policy & planning support tool that evaluates city-scale development scenarios
+- A multi-agent system where land, investment and community agents negotiate a recommendation
 
 **Relevant data:** all four datasets
 **Example code:** [`examples/decision-copilot/`](../examples/decision-copilot/)

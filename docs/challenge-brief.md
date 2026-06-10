@@ -10,6 +10,8 @@ Cities generate enormous amounts of signal — parcels, transactions, capital fl
 
 In one day at Hub71, you'll build a working AI prototype that makes some part of a city legible and actionable: a scoring engine, a matching system, a copilot, a simulation, an agent. Something real, something demoable.
 
+This is also a co-creation exercise. eVoost, the organizer, is defining a **City Intelligence Framework** for Abu Dhabi — how AI can support governments, developers and investors in decisions about land, capital and communities. Nobody has built that system yet; today you prototype pieces of what it could become. The ideal output of the day isn't production software — it's a **portfolio of credible prototypes** showing what the future intelligence layer could look like. The strongest ones get showcased publicly and may shape what gets built next.
+
 ## What you're building
 
 A **working prototype** in one of four tracks:
