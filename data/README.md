@@ -27,4 +27,12 @@ transactions = pd.read_csv("sample_transactions.csv", parse_dates=["date"])
 communities  = pd.read_csv("sample_communities.csv")
 ```
 
+The same datasets are mirrored on Hugging Face: <https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge>
+
+```python
+# Load directly from the Hub, no clone needed
+base = "https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge/resolve/main/"
+parcels = pd.read_csv(base + "sample_parcels.csv")
+```
+
 License: MIT — use, modify, and extend freely during and after the event.
