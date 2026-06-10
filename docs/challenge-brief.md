@@ -1,6 +1,6 @@
 # Challenge Brief
 
-## Abu Dhabi AI City Challenge
+## Abu Dhabi AI PropTech Challenge
 
 **Building the Intelligence Layer for Land, Investment and Communities**
 

@@ -1,6 +1,6 @@
 # Sample Data
 
-Four synthetic datasets for prototyping during the Abu Dhabi AI City Challenge.
+Four synthetic datasets for prototyping during the Abu Dhabi AI PropTech Challenge.
 
 > **Synthetic data notice:** every row in these files was generated for this event. District names are real places, but all values — sizes, prices, scores, populations — are invented. Nothing here is real market, government, or personal data. Do not cite it as fact.
 

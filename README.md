@@ -1,4 +1,4 @@
-# Abu Dhabi AI City Challenge — Starter Kit
+# Abu Dhabi AI PropTech Challenge — Starter Kit
 
 **Building the Intelligence Layer for Land, Investment and Communities**
 

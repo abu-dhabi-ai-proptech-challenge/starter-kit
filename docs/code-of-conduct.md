@@ -1,6 +1,6 @@
 # Code of Conduct
 
-The Abu Dhabi AI City Challenge is a professional, builder-first event. Everyone — participants, mentors, judges, organizers — is expected to keep it that way.
+The Abu Dhabi AI PropTech Challenge is a professional, builder-first event. Everyone — participants, mentors, judges, organizers — is expected to keep it that way.
 
 ## The standard
 

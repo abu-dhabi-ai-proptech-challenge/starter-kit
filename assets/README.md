@@ -1,6 +1,6 @@
 # Assets
 
-Brand assets for the Abu Dhabi AI City Challenge.
+Brand assets for the Abu Dhabi AI PropTech Challenge.
 
 ## Contents (to be added by organizers)
 
@@ -14,4 +14,4 @@ Brand assets for the Abu Dhabi AI City Challenge.
 - Do not modify the logo or imply endorsement of external products.
 - Brand line, always written exactly as:
 
-> **Abu Dhabi AI City Challenge** — Building the Intelligence Layer for Land, Investment and Communities
+> **Abu Dhabi AI PropTech Challenge** — Building the Intelligence Layer for Land, Investment and Communities
