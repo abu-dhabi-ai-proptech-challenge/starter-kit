@@ -83,7 +83,7 @@ assets/      Brand assets
 - 🌐 Website: WEBSITE_URL
 - 💬 Discord: https://discord.gg/jy3QDxQ3jK
 - 🐙 GitHub Org: https://github.com/abu-dhabi-ai-proptech-challenge
-- 🤗 Hugging Face: HUGGINGFACE_URL
+- 🤗 Hugging Face: https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge
 - 📝 Registration: REGISTER_URL
 
 ## Code of conduct
