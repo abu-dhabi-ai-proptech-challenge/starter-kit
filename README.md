@@ -10,6 +10,7 @@ This repo is your starting point: the challenge brief, the tracks, synthetic dat
 
 | | |
 |---|---|
+| **Date** | Friday, 26 June 2026 |
 | **Format** | One-day, in-person AI challenge |
 | **Venue** | Hub71, Abu Dhabi |
 | **Hosts** | Cursor × eVoost AI |
