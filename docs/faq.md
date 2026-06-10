@@ -29,7 +29,7 @@ Yes. Ollama, llama.cpp, Hugging Face transformers — all fine.
 Yes. It's synthetic and MIT-licensed. You can also bring public datasets or generate your own. Just no real personal data.
 
 **Can I use Cursor?**
-Strongly encouraged — Cursor is co-hosting, and there's a **Best Use of Cursor** award.
+Strongly encouraged — Cursor is co-hosting, and there's a **Best Use of Cursor** award. Setup, one-day workflow and award tips: [Hacking with Cursor](cursor-guide.md).
 
 ## Submitting
 
