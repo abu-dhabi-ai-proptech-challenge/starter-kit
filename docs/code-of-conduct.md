@@ -24,7 +24,7 @@ This applies at the venue, on Discord, in GitHub repos and Issues, and in any ot
 
 ## Reporting
 
-If you experience or witness a violation, contact any organizer at the venue or message the organizer team on Discord (DISCORD_URL). Reports are handled confidentially.
+If you experience or witness a violation, contact any organizer at the venue or message the organizer team on Discord (https://discord.gg/jy3QDxQ3jK). Reports are handled confidentially.
 
 ## Enforcement
 

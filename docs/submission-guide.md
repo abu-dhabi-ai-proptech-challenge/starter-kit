@@ -3,14 +3,14 @@
 ## TL;DR
 
 1. Build in your own GitHub repo (public, or private with judge access).
-2. Before the deadline, open an Issue in the [`submissions`](GITHUB_ORG_URL/submissions) repo using the **Project Submission** form.
+2. Before the deadline, open an Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) repo using the **Project Submission** form.
 3. One submission per team. Late submissions are not judged.
 
 ## Step by step
 
 ### 1. Get your project into a repo
 
-- Use your own repo, or generate one from the [`project-template`](GITHUB_ORG_URL/project-template) ("Use this template" button).
+- Use your own repo, or generate one from the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) ("Use this template" button).
 - Make it **public** if you can. If it must stay private, add the organizer account as a collaborator so judges can review it.
 - Make sure the README explains how to run it.
 
@@ -28,7 +28,7 @@ For the demo link: a deployed URL (Vercel, Hugging Face Spaces, etc.) is best; a
 
 ### 3. Open the submission Issue
 
-Go to **[`submissions` → Issues → New Issue → Project Submission](GITHUB_ORG_URL/submissions/issues/new/choose)** and fill in the form:
+Go to **[`submissions` → Issues → New Issue → Project Submission](https://github.com/abu-dhabi-ai-proptech-challenge/submissions/issues/new/choose)** and fill in the form:
 
 - Team name and members
 - Track (one of the four)
@@ -61,4 +61,4 @@ Submit the Issue. That's it — the timestamp on the Issue is your submission ti
 - Describing the roadmap instead of what exists
 - Submitting at deadline-minus-30-seconds — the form takes a few minutes; start early
 
-Questions? Open a **Question** issue in `submissions` or ask on Discord (DISCORD_URL).
+Questions? Open a **Question** issue in `submissions` or ask on Discord (https://discord.gg/jy3QDxQ3jK).

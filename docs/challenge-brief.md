@@ -30,7 +30,7 @@ See [`tracks.md`](tracks.md) for detailed prompts and example ideas per track.
 | Afternoon | Build, submission deadline announced in advance |
 | Evening | 3-minute demos, judging, awards |
 
-Exact timings are announced at the venue and on Discord (DISCORD_URL).
+Exact timings are announced at the venue and on Discord (https://discord.gg/jy3QDxQ3jK).
 
 ## Rules
 
@@ -55,4 +55,4 @@ Five criteria, equally weighted: **Problem & relevance, Technical execution, Use
 
 ## Questions?
 
-Ask on Discord (DISCORD_URL), find a mentor at the venue, or open a Question issue in the `submissions` repo.
+Ask on Discord (https://discord.gg/jy3QDxQ3jK), find a mentor at the venue, or open a Question issue in the `submissions` repo.

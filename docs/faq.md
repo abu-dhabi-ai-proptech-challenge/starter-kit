@@ -17,7 +17,7 @@ You can think, sketch, and explore the datasets in advance. The prototype itself
 ## Building
 
 **What stack should I use?**
-Anything. The [`project-template`](GITHUB_ORG_URL/project-template) gives you a Next.js + TypeScript + Tailwind dashboard; the [`examples/`](../examples/) folder gives you Python agents. Both are optional.
+Anything. The [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) gives you a Next.js + TypeScript + Tailwind dashboard; the [`examples/`](../examples/) folder gives you Python agents. Both are optional.
 
 **Do I need API keys?**
 No. All example code runs locally without keys. If you want to use hosted models (OpenAI, Anthropic, Hugging Face, etc.), bring your own keys — the examples mark exactly where to plug them in.
@@ -34,7 +34,7 @@ Strongly encouraged — Cursor is co-hosting, and there's a **Best Use of Cursor
 ## Submitting
 
 **How do I submit?**
-Open an Issue in the [`submissions`](GITHUB_ORG_URL/submissions) repo using the **Project Submission** form, before the deadline. Full details in the [submission guide](submission-guide.md).
+Open an Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) repo using the **Project Submission** form, before the deadline. Full details in the [submission guide](submission-guide.md).
 
 **Does my repo have to be public?**
 Public is preferred. Private works if you grant the organizer account access.
@@ -60,8 +60,8 @@ Five equally weighted criteria — problem & relevance, technical execution, use
 Best Overall, one award per track, and Best Use of Cursor.
 
 **Who owns what we build?**
-Your team owns your project. Winning projects may be showcased (with your consent) in the [`winning-projects`](GITHUB_ORG_URL/winning-projects) repo.
+Your team owns your project. Winning projects may be showcased (with your consent) in the [`winning-projects`](https://github.com/abu-dhabi-ai-proptech-challenge/winning-projects) repo.
 
 ## Still stuck?
 
-Ask on Discord (DISCORD_URL) or open a **Question** issue in the `submissions` repo.
+Ask on Discord (https://discord.gg/jy3QDxQ3jK) or open a **Question** issue in the `submissions` repo.

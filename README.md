@@ -15,7 +15,7 @@ This repo is your starting point: the challenge brief, the tracks, synthetic dat
 | **Hosts** | Cursor × eVoost AI |
 | **Teams** | 2–5 people |
 | **Deliverable** | Working prototype + 3-minute demo |
-| **Submission** | GitHub Issue in the [`submissions`](GITHUB_ORG_URL/submissions) repo |
+| **Submission** | GitHub Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) repo |
 
 ## Challenge tracks
 
@@ -32,7 +32,7 @@ Full details in [`docs/tracks.md`](docs/tracks.md).
 
 ```bash
 # 1. Clone this kit
-git clone GITHUB_ORG_URL/starter-kit.git
+git clone https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit.git
 cd starter-kit
 
 # 2. Explore the sample data
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Want a web app instead? Generate a repo from the [`project-template`](GITHUB_ORG_URL/project-template) — a Next.js + TypeScript + Tailwind dashboard ready for your prototype.
+Want a web app instead? Generate a repo from the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) — a Next.js + TypeScript + Tailwind dashboard ready for your prototype.
 
 ## Datasets
 
@@ -62,8 +62,8 @@ All data is **synthetic** — generated for this challenge, containing no real p
 
 ## How to submit
 
-1. Build in your own repo (or from the [`project-template`](GITHUB_ORG_URL/project-template)).
-2. Before the deadline, open an Issue in [`submissions`](GITHUB_ORG_URL/submissions) using the **Project Submission** form.
+1. Build in your own repo (or from the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template)).
+2. Before the deadline, open an Issue in [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) using the **Project Submission** form.
 3. Include your repo link, demo link, and what you built during the day.
 
 Full instructions: [`docs/submission-guide.md`](docs/submission-guide.md). Judging criteria: [`docs/judging-criteria.md`](docs/judging-criteria.md).
@@ -81,8 +81,8 @@ assets/      Brand assets
 ## Links
 
 - 🌐 Website: WEBSITE_URL
-- 💬 Discord: DISCORD_URL
-- 🐙 GitHub Org: GITHUB_ORG_URL
+- 💬 Discord: https://discord.gg/jy3QDxQ3jK
+- 🐙 GitHub Org: https://github.com/abu-dhabi-ai-proptech-challenge
 - 🤗 Hugging Face: HUGGINGFACE_URL
 - 📝 Registration: REGISTER_URL
 
