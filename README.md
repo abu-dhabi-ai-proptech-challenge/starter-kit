@@ -81,11 +81,11 @@ assets/      Brand assets
 
 ## Links
 
-- 🌐 Website: https://citygeist-core.lovable.app
+- 🌐 Website: https://challenge.evoost.ai
 - 💬 Discord: https://discord.gg/jy3QDxQ3jK
 - 🐙 GitHub Org: https://github.com/abu-dhabi-ai-proptech-challenge
 - 🤗 Hugging Face: https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge
-- 📝 Registration: https://citygeist-core.lovable.app/#register
+- 📝 Registration: https://challenge.evoost.ai/#register
 
 ## Code of conduct
 
