@@ -25,14 +25,16 @@ See [`tracks.md`](tracks.md) for detailed prompts and example ideas per track.
 
 ## The day
 
-| Phase | What happens |
+| Time (GST) | What happens |
 |---|---|
-| Morning | Kickoff, track briefings, team formation, building begins |
-| Midday | Build, with mentors circulating |
-| Afternoon | Build, submission deadline announced in advance |
-| Evening | 3-minute demos, judging, awards |
+| 12:00 | Doors, registration, team formation |
+| 12:35 | Challenge briefing |
+| 13:00 | Hacking begins |
+| 16:30 | Submission deadline |
+| 17:00 | 3-minute demos + judging |
+| 17:45 | Awards, then networking until 18:00 |
 
-Exact timings are announced at the venue and on Discord (https://discord.gg/jy3QDxQ3jK).
+Same agenda as the website; any changes are announced at the venue and on Discord (https://discord.gg/jy3QDxQ3jK).
 
 ## Rules
 
