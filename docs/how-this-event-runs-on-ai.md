@@ -7,11 +7,13 @@ The challenge asks you to build the intelligence layer for land, investment and 
 | System | What it does | AI involved |
 |---|---|---|
 | **AI Judge** | Evaluates every submission minutes after it arrives: reads your form, inspects your repo, scores against the public rubric, sends you constructive feedback and gives human judges a prioritized view | Claude, structured outputs, cached rubric — [methodology + source](https://github.com/abu-dhabi-ai-proptech-challenge/submissions/blob/main/docs/ai-judge.md) |
-| **Helper bot** | Answers questions in Discord `#help-desk` or on @mention, grounded in the event docs — it won't invent rules or deadlines | Claude with a curated knowledge base and prompt caching |
+| **Event Pulse** | Every hour of the event, the AI reads real signals (submissions, Discord activity) and narrates the moment — on the venue's big screen ([/live](https://challenge.evoost.ai/live)) and in `#announcements` simultaneously | Claude with structured outputs; zero-backend dashboard reads public GitHub data |
+| **Helper bot** | Answers questions in Discord `#help-desk` or on @mention, onboards every new member (role + welcome DM), and summarizes who's looking for a team on `!teams` | Claude with a curated knowledge base and prompt caching |
+| **GitHub question bot** | Every `question` Issue gets a grounded AI answer in minutes; when the docs don't cover it, it says so and flags a human — calibrated honesty over invention | Claude, structured outputs with a self-reported confidence flag |
 | **Submission pipeline** | Track labeling, welcome + checklist, link verification on every edit, late detection, live Discord feed | Deterministic workflows — automation where AI isn't needed |
-| **Event ops** | Deadline countdown, final judging report, demo-order generation, winners publishing | Scheduled + one-command workflows |
+| **Event ops** | Deadline countdown, final judging report, demo order with AI-written MC intros, winners publishing, post-event discovery analysis | Scheduled + one-command workflows |
 
-A submission flows through the whole layer with **zero human touches**: labeled, welcomed, verified, AI-evaluated, fed to Discord, ranked for judges.
+A submission flows through the whole layer with **zero human touches**: labeled, welcomed, verified, AI-evaluated, fed to Discord, counted on the live dashboard, narrated by the Pulse, ranked for judges.
 
 ## Why we built it this way
 
