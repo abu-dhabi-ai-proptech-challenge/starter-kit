@@ -14,7 +14,7 @@ Answers natural-language questions across all four datasets — the "Q&A over da
 No API keys needed. It runs three sample questions and prints sourced answers; pass your own question as an argument:
 
 ```bash
-python main.py "Which district has the most unmet service demand?"
+../../.venv/bin/python main.py "Which district has the most unmet service demand?"
 ```
 
 ## How it works
