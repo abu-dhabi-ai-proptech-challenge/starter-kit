@@ -96,6 +96,7 @@ assets/      Brand assets
 | Symptom | Fix |
 |---|---|
 | `python3: command not found` | Install Python 3.10+ from [python.org](https://python.org) (Windows: tick "Add to PATH") |
+| `command not found: pip` | Don't use bare `pip` — run `./quickstart.sh`, which sets everything up inside a virtualenv |
 | `ModuleNotFoundError: pandas` | You're outside the virtualenv — use `.venv/bin/python` (or `.venv\Scripts\python` on Windows) |
 | Notebook plots fail | `pip install matplotlib` (included in `quickstart.sh`) |
 | Corporate laptop blocks pip | Use the [Colab notebook](https://colab.research.google.com/github/abu-dhabi-ai-proptech-challenge/starter-kit/blob/main/notebooks/explore_sample_data.ipynb) — runs in the browser |

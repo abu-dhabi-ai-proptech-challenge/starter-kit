@@ -5,8 +5,10 @@ Ranks land parcels by development opportunity and generates a plain-language rec
 ## Run it
 
 ```bash
-pip install -r requirements.txt
-python main.py
+# one-time setup, from the starter-kit root:
+../../quickstart.sh
+# then run this agent:
+../../.venv/bin/python main.py
 ```
 
 No API keys needed. Output: the top 5 parcels with composite opportunity scores and generated recommendations.

@@ -27,6 +27,15 @@ jobs:
 
       - run: pip install pandas matplotlib jupyter nbconvert
 
+      - name: Docs never tell users to run bare pip/python
+        run: |
+          if grep -rnE '(^|[ `(])(pip install|python )' README.md docs/ examples/*/README.md examples/README.md \
+              | grep -v '.venv' | grep -v 'quickstart' | grep -v 'python3'; then
+            echo "::error::Participant-facing docs use bare 'pip'/'python' — they break on stock macOS. Use ./quickstart.sh or .venv paths."
+            exit 1
+          fi
+          echo "docs OK"
+
       - name: Validate datasets
         run: |
           python3 - <<'EOF'

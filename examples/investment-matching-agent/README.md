@@ -5,8 +5,10 @@ Pairs investor mandates with land parcels and explains each match — the "match
 ## Run it
 
 ```bash
-pip install -r requirements.txt
-python main.py
+# one-time setup, from the starter-kit root:
+../../quickstart.sh
+# then run this agent:
+../../.venv/bin/python main.py
 ```
 
 No API keys needed. Output: the top parcel matches for each of three sample investors, with fit scores and one-line rationales.

@@ -5,8 +5,10 @@ Answers natural-language questions across all four datasets — the "Q&A over da
 ## Run it
 
 ```bash
-pip install -r requirements.txt
-python main.py
+# one-time setup, from the starter-kit root:
+../../quickstart.sh
+# then run this agent:
+../../.venv/bin/python main.py
 ```
 
 No API keys needed. It runs three sample questions and prints sourced answers; pass your own question as an argument:

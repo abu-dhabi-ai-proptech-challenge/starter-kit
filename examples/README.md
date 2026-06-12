@@ -11,9 +11,10 @@ Three small, runnable examples — one per major pattern you might build during 
 ## Running an example
 
 ```bash
-cd land-intelligence-agent
-pip install -r requirements.txt
-python main.py
+# one-time setup, from the starter-kit root:
+./quickstart.sh
+# then run any example:
+.venv/bin/python examples/land-intelligence-agent/main.py
 ```
 
 Each `main.py` reads from `../../data/`, so run from inside the example's folder.
