@@ -1,0 +1,59 @@
+name: Starter kit health
+
+# "No failures on our side": every push, plus a weekly heartbeat, proves that
+# everything a participant will run actually runs — datasets, all three
+# example agents (including the no-local-data Hugging Face fallback path),
+# and the notebook executed top to bottom.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"   # weekly heartbeat, Mondays
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - run: pip install pandas matplotlib jupyter nbconvert
+
+      - name: Validate datasets
+        run: |
+          python3 - <<'EOF'
+          import csv
+          EXPECTED = {"sample_parcels": 10, "sample_investors": 8,
+                      "sample_transactions": 8, "sample_communities": 8}
+          for name, cols in EXPECTED.items():
+              rows = list(csv.DictReader(open(f"data/{name}.csv")))
+              assert len(rows) >= 25, f"{name}: only {len(rows)} rows"
+              assert all(len(r) == cols and all(v.strip() for v in r.values()) for r in rows), name
+              print(f"{name}: {len(rows)} rows OK")
+          EOF
+
+      - name: Run all example agents (local data)
+        run: |
+          for ex in land-intelligence-agent investment-matching-agent decision-copilot; do
+            echo "── $ex ──"
+            (cd "examples/$ex" && python3 main.py)
+          done
+
+      - name: Run an agent with NO local data (Hugging Face fallback)
+        run: |
+          cp -r examples /tmp/isolated-examples
+          (cd /tmp/isolated-examples/land-intelligence-agent && python3 main.py)
+
+      - name: Execute the notebook top to bottom
+        run: |
+          jupyter nbconvert --to notebook --execute \
+            notebooks/explore_sample_data.ipynb --output /tmp/executed.ipynb
+          echo "notebook executed cleanly"

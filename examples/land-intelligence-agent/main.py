@@ -9,13 +9,20 @@ from pathlib import Path
 import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+HF_BASE = "https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge/resolve/main/"
+
+
+def data_source(filename: str) -> str:
+    """Local CSV when running inside the starter kit; Hugging Face otherwise."""
+    local = DATA_DIR / filename
+    return str(local) if local.exists() else HF_BASE + filename
 TOP_N = 5
 
 
 def load_data() -> pd.DataFrame:
     """Join parcels with district-level community demand."""
-    parcels = pd.read_csv(DATA_DIR / "sample_parcels.csv")
-    communities = pd.read_csv(DATA_DIR / "sample_communities.csv")
+    parcels = pd.read_csv(data_source("sample_parcels.csv"))
+    communities = pd.read_csv(data_source("sample_communities.csv"))
 
     # Average community metrics per district (districts can have several communities)
     district_demand = (

@@ -2,6 +2,8 @@
 
 **Building the Intelligence Layer for Land, Investment and Communities**
 
+[![Starter kit health](https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit/actions/workflows/ci.yml) — every example, dataset and notebook here is exercised by CI on every change and weekly. If this badge is green, everything below works.
+
 A one-day AI challenge hosted by **[Cursor](https://cursor.com)** and **[eVoost AI](https://evoost.ai)** at **Hub71, Abu Dhabi**. In a single day, teams design and ship working AI prototypes that make a city's land, capital, and communities easier to understand and act on.
 
 This repo is your starting point: the challenge brief, the tracks, synthetic datasets, runnable example agents, and everything you need to go from idea to demo.
@@ -31,20 +33,30 @@ Full details in [`docs/tracks.md`](docs/tracks.md).
 
 ## Quick start
 
+**One command** (macOS / Linux / WSL — needs Python 3.10+):
+
 ```bash
-# 1. Clone this kit
+git clone https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit.git
+cd starter-kit && ./quickstart.sh
+```
+
+That creates a virtualenv, installs everything, and runs an example agent end to end.
+
+**Zero-install option:** open the data walkthrough straight in Google Colab — nothing to set up:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/abu-dhabi-ai-proptech-challenge/starter-kit/blob/main/notebooks/explore_sample_data.ipynb)
+
+**Manual / Windows (PowerShell):**
+
+```powershell
 git clone https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit.git
 cd starter-kit
-
-# 2. Explore the sample data
-pip install pandas jupyter
-jupyter notebook notebooks/explore_sample_data.ipynb
-
-# 3. Run an example agent
-cd examples/land-intelligence-agent
-pip install -r requirements.txt
-python main.py
+python -m venv .venv
+.venv\Scripts\pip install pandas matplotlib jupyter
+cd examples\land-intelligence-agent
+..\..\.venv\Scripts\python main.py
 ```
+
+The example agents also run **without the data folder** — if `data/` isn't next to them, they pull the CSVs from Hugging Face automatically.
 
 Want a web app instead? Generate a repo from the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) — a Next.js + TypeScript + Tailwind dashboard ready for your prototype.
 
@@ -78,6 +90,16 @@ examples/    Three runnable example agents (no API keys required)
 notebooks/   Jupyter notebook to explore the data
 assets/      Brand assets
 ```
+
+## Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| `python3: command not found` | Install Python 3.10+ from [python.org](https://python.org) (Windows: tick "Add to PATH") |
+| `ModuleNotFoundError: pandas` | You're outside the virtualenv — use `.venv/bin/python` (or `.venv\Scripts\python` on Windows) |
+| Notebook plots fail | `pip install matplotlib` (included in `quickstart.sh`) |
+| Corporate laptop blocks pip | Use the [Colab notebook](https://colab.research.google.com/github/abu-dhabi-ai-proptech-challenge/starter-kit/blob/main/notebooks/explore_sample_data.ipynb) — runs in the browser |
+| Anything else | Ask in [Discord](https://discord.gg/jy3QDxQ3jK) `#help-desk` — the AI assistant + mentors answer fast |
 
 ## Links
 

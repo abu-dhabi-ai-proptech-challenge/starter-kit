@@ -9,6 +9,13 @@ from pathlib import Path
 import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+HF_BASE = "https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge/resolve/main/"
+
+
+def data_source(filename: str) -> str:
+    """Local CSV when running inside the starter kit; Hugging Face otherwise."""
+    local = DATA_DIR / filename
+    return str(local) if local.exists() else HF_BASE + filename
 TOP_MATCHES = 3
 SAMPLE_INVESTORS = 3
 
@@ -91,8 +98,8 @@ def explain_match(investor: pd.Series, parcel: pd.Series, score: float) -> str:
 
 
 def main() -> None:
-    investors = pd.read_csv(DATA_DIR / "sample_investors.csv")
-    parcels = pd.read_csv(DATA_DIR / "sample_parcels.csv")
+    investors = pd.read_csv(data_source("sample_investors.csv"))
+    parcels = pd.read_csv(data_source("sample_parcels.csv"))
 
     print("\n=== Investment Matching Agent ===")
     for _, investor in investors.head(SAMPLE_INVESTORS).iterrows():
