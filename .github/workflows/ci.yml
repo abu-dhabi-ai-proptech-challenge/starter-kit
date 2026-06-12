@@ -13,6 +13,28 @@ on:
     - cron: "0 6 * * 1"   # weekly heartbeat, Mondays
 
 jobs:
+  # The exact commands participants run, on real macOS and Windows runners
+  quickstart-scripts:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            cmd: ./quickstart.sh
+            shell: bash
+          - os: windows-latest
+            cmd: powershell -ExecutionPolicy Bypass -File .\quickstart.ps1
+            shell: pwsh
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Run the participant quickstart verbatim
+        shell: ${{ matrix.shell }}
+        run: ${{ matrix.cmd }}
+
   health:
     runs-on: ubuntu-latest
     strategy:

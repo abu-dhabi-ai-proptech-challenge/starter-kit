@@ -45,15 +45,12 @@ That creates a virtualenv, installs everything, and runs an example agent end to
 **Zero-install option:** open the data walkthrough straight in Google Colab — nothing to set up:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/abu-dhabi-ai-proptech-challenge/starter-kit/blob/main/notebooks/explore_sample_data.ipynb)
 
-**Manual / Windows (PowerShell):**
+**Windows (PowerShell) — also one command:**
 
 ```powershell
 git clone https://github.com/abu-dhabi-ai-proptech-challenge/starter-kit.git
 cd starter-kit
-python -m venv .venv
-.venv\Scripts\pip install pandas matplotlib jupyter
-cd examples\land-intelligence-agent
-..\..\.venv\Scripts\python main.py
+powershell -ExecutionPolicy Bypass -File .\quickstart.ps1
 ```
 
 The example agents also run **without the data folder** — if `data/` isn't next to them, they pull the CSVs from Hugging Face automatically.
@@ -97,6 +94,8 @@ assets/      Brand assets
 |---|---|
 | `python3: command not found` | Install Python 3.10+ from [python.org](https://python.org) (Windows: tick "Add to PATH") |
 | `command not found: pip` | Don't use bare `pip` — run `./quickstart.sh`, which sets everything up inside a virtualenv |
+| Windows: `python` opens the Microsoft Store | That's a Windows stub, not Python — install from [python.org](https://python.org) ("Add to PATH"); `quickstart.ps1` detects and avoids the stub |
+| Windows: "running scripts is disabled" | Use the exact command above (`-ExecutionPolicy Bypass`) — it bypasses the policy for this one script only |
 | `ModuleNotFoundError: pandas` | You're outside the virtualenv — use `.venv/bin/python` (or `.venv\Scripts\python` on Windows) |
 | Notebook plots fail | `pip install matplotlib` (included in `quickstart.sh`) |
 | Corporate laptop blocks pip | Use the [Colab notebook](https://colab.research.google.com/github/abu-dhabi-ai-proptech-challenge/starter-kit/blob/main/notebooks/explore_sample_data.ipynb) — runs in the browser |
