@@ -7,6 +7,7 @@ Three small, runnable examples — one per major pattern you might build during 
 | [`land-intelligence-agent/`](land-intelligence-agent/) | Score + explain: rank parcels by development potential | Land Intelligence |
 | [`investment-matching-agent/`](investment-matching-agent/) | Match + rank: pair investor mandates with parcels | Investment Intelligence |
 | [`decision-copilot/`](decision-copilot/) | Q&A over data: answer questions across all four datasets | Decision Intelligence |
+| 🎁 [`live-data-connector/`](live-data-connector/) | **Bonus** — pull real, live Abu Dhabi listings from eVoost's API (messy real-world data) | Investment Intelligence · Future Communities |
 
 ## Running an example
 
