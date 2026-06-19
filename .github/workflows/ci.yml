@@ -69,6 +69,7 @@ jobs:
               "sample_investors": (50, 8),
               "sample_communities": (50, 8),
               "sample_listings": (1000, 17),
+              "osm_amenities": (1000, 7),
           }
           districts = {r["district"] for r in csv.DictReader(open("data/districts.csv"))}
           for name, (min_rows, cols) in EXPECTED.items():

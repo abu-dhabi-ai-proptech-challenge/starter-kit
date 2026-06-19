@@ -2,7 +2,7 @@
 
 Six synthetic datasets for prototyping during the Abu Dhabi AI PropTech Challenge — internally consistent and grounded in real Abu Dhabi districts.
 
-> **Synthetic data notice:** every row in these files was generated for this event. District names are real places, but all values — sizes, prices, scores, populations, coordinates — are invented. Nothing here is real market, government, or personal data. Do not cite it as fact.
+> **Synthetic data notice:** the five `sample_*` files and `districts.csv` are fully synthetic — district names are real places, but every value (prices, scores, populations, coordinates) is invented. The one exception is **`osm_amenities.csv`, which is REAL data from OpenStreetMap** (© OpenStreetMap contributors, [ODbL](https://www.openstreetmap.org/copyright) — attribution required if you redistribute it).
 
 | File | Rows | What it covers | Primary tracks |
 |---|---|---|---|
@@ -12,6 +12,7 @@ Six synthetic datasets for prototyping during the Abu Dhabi AI PropTech Challeng
 | [`sample_investors.csv`](sample_investors.csv) | 200 | Investor mandates: type, sector, capital, risk | Investment Intelligence |
 | [`sample_communities.csv`](sample_communities.csv) | 90 | Community metrics: population, services, mobility | Future Communities |
 | [`sample_listings.csv`](sample_listings.csv) | 6,000 | Residential rent/buy listings with lat/long (portal-style) | Investment Intelligence · Future Communities |
+| [`osm_amenities.csv`](osm_amenities.csv) | 3,155 | **REAL** Abu Dhabi amenities from OpenStreetMap (schools, clinics, transit, retail, parks…) with lat/long + nearest district | Future Communities · maps |
 
 Everything keys on `district` (join to `districts.csv` for a centroid lat/long), so the datasets combine cleanly for cross-cutting (Decision Intelligence) prototypes. `sample_listings.csv` also carries its own `latitude`/`longitude` for map-based work.
 

@@ -69,8 +69,9 @@ Six synthetic datasets in [`data/`](data/), internally consistent and grounded i
 | `sample_investors.csv` | 200 | Investor profiles: type, sector, capital range, risk, horizon |
 | `sample_communities.csv` | 90 | Community metrics: population, occupancy, services, mobility, experience |
 | `sample_listings.csv` | 6,000 | Residential rent/buy listings with lat/long (portal-style) |
+| `osm_amenities.csv` | 3,155 | **REAL** Abu Dhabi amenities from OpenStreetMap (lat/long + district) |
 
-Everything keys on `district`, so the datasets join cleanly; `sample_listings.csv` carries its own coordinates for map work. All data is **synthetic** — generated for this challenge (regenerate/tweak via [`datagen/generate.py`](datagen/)), containing no real personal or commercial information. Column definitions in [`docs/datasets.md`](docs/datasets.md). You're welcome to bring your own public datasets too.
+Everything keys on `district`, so the datasets join cleanly; `sample_listings.csv` and `osm_amenities.csv` carry their own coordinates for map work. The `sample_*`/`districts` files are **synthetic** (regenerate via [`datagen/generate.py`](datagen/)); **`osm_amenities.csv` is real** OpenStreetMap data (© OSM contributors, ODbL — attribute if you redistribute, refresh via [`datagen/fetch_osm.py`](datagen/)). Column definitions in [`docs/datasets.md`](docs/datasets.md). You're welcome to bring your own public datasets too.
 
 > 🎁 **Bonus — real live data:** want messy, real Abu Dhabi listings? The [`live-data-connector`](examples/live-data-connector/) example pulls them from eVoost's UAE data API. Optional and advanced — the synthetic data above is your guaranteed foundation. API key is in Discord (not in this repo).
 

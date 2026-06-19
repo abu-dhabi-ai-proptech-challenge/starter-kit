@@ -106,6 +106,38 @@ Residential rent/buy listings, modeled on the shape of a property-portal / housi
 
 > Filter by `listing_type` before comparing `price_aed` — rent and sale live in the same column with different meaning.
 
+## osm_amenities.csv (REAL data)
+
+The one non-synthetic file: **3,155 real Abu Dhabi amenities from OpenStreetMap** — schools, clinics, pharmacies, supermarkets, malls, parks, transit stops, banks and more, each with coordinates and its nearest canonical district. Refresh/extend it with [`../datagen/fetch_osm.py`](../datagen/).
+
+> Data © OpenStreetMap contributors, [ODbL](https://www.openstreetmap.org/copyright). If you ship something built on it, attribute OSM.
+
+| Column | Type | Description |
+|---|---|---|
+| `amenity_id` | string | OSM type+id, e.g. `N564684020` (N=node, W=way) |
+| `category` | string | `education`, `healthcare`, `retail`, `services`, `community`, `mobility` |
+| `subtype` | string | OSM value, e.g. `school`, `pharmacy`, `bus_stop`, `park` |
+| `name` | string | Name (English where available; `(unnamed <subtype>)` if none) |
+| `latitude` / `longitude` | float | Real coordinates |
+| `district` | string | Nearest canonical district (join key to the synthetic data) |
+
+Pair it with `sample_communities` (does demand match amenity supply?) or `sample_listings` (amenity density vs price) for strong Future Communities prototypes.
+
+## More real & open data (pull it yourself)
+
+Beyond this kit, these are real, openly-licensed sources teams can use — all genuinely usable, unlike scraped portal data:
+
+| Source | What | Track |
+|---|---|---|
+| [Abu Dhabi Open Data](https://data.abudhabi) / SCAD | Official AD demographics, economy, services | all |
+| [Dubai Pulse / Dubai Land Department](https://www.dubaipulse.gov.ae) | **Real** property transactions (Dubai) | Investment Intelligence |
+| [OpenStreetMap](https://www.openstreetmap.org) (Overpass) | Amenities, transport, POIs (we ship an AD extract above) | Future Communities |
+| [WorldPop](https://www.worldpop.org) / [Meta HRSL on HDX](https://data.humdata.org) | Real population-density grids for the UAE | Future Communities |
+| [Google Open Buildings](https://sites.research.google/open-buildings/) / [MS Footprints](https://github.com/microsoft/GlobalMLBuildingFootprints) | Building footprints covering the UAE | Land Intelligence |
+| [Overture Maps](https://overturemaps.org) | Open POIs + buildings, includes UAE | various |
+
+Plus the optional **live listings API** — see [`../examples/live-data-connector/`](../examples/live-data-connector/).
+
 ## Working with the data
 
 ```python
