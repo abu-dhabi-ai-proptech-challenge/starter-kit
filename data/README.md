@@ -41,4 +41,11 @@ base = "https://huggingface.co/datasets/eVoost/abu-dhabi-ai-proptech-challenge/r
 parcels = pd.read_csv(base + "sample_parcels.csv")
 ```
 
+## 🎁 Bonus: real live data
+
+Beyond these synthetic CSVs, there's an **optional** live feed of real Abu Dhabi rent/buy listings from eVoost's UAE data API. It's messy, real-world, scraped data — a genuine challenge and a differentiator for your demo. The synthetic datasets above remain your clean, guaranteed foundation.
+
+- Connector + how-to: [`../examples/live-data-connector/`](../examples/live-data-connector/)
+- API key: pinned in **Discord `#resources`** (not committed to this public repo for security).
+
 License: MIT — use, modify, and extend freely during and after the event.

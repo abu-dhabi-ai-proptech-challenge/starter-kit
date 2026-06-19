@@ -120,6 +120,13 @@ merged = parcels.merge(communities, on="district")
 
 A guided walkthrough lives in [`notebooks/explore_sample_data.ipynb`](../notebooks/explore_sample_data.ipynb).
 
+## 🎁 Bonus: real live data (optional)
+
+There's also a live feed of **real** Abu Dhabi rent/buy listings from eVoost's UAE data API — messy, scraped, real-world data (mislabeled rent/sale, sparse fields, the works). Turning that into signal is exactly the kind of thing this challenge is about, and it stands out to judges. Strictly optional; the synthetic datasets above are your guaranteed foundation.
+
+- Connector, usage and the known data quirks: [`../examples/live-data-connector/`](../examples/live-data-connector/)
+- The API key is shared in **Discord `#resources`** (kept out of this public repo).
+
 ## Bring your own data
 
 You may also use public datasets (open government data, OpenStreetMap, public market indices) or generate synthetic data. Do **not** use scraped private data or any real personal information.

@@ -59,16 +59,20 @@ Want a web app instead? Generate a repo from the [`project-template`](https://gi
 
 ## Datasets
 
-Four synthetic datasets in [`data/`](data/), modeled on the kinds of signals a city intelligence layer works with:
+Six synthetic datasets in [`data/`](data/), internally consistent and grounded in 20 real Abu Dhabi districts:
 
 | File | Rows | Describes |
 |---|---|---|
-| `sample_parcels.csv` | 30 | Land parcels: zoning, size, status, infrastructure and potential scores |
-| `sample_investors.csv` | 30 | Investor profiles: type, sector, capital range, risk, horizon |
-| `sample_transactions.csv` | 30 | Property transactions: asset type, value, size, price per sqm |
-| `sample_communities.csv` | 30 | Community metrics: population, occupancy, services, mobility, experience |
+| `districts.csv` | 20 | Reference table: base price/sqm, yield, infrastructure score, centroid per district |
+| `sample_parcels.csv` | 600 | Land parcels: zoning, size, status, infrastructure and potential scores |
+| `sample_transactions.csv` | 5,000 | Property transactions 2023–2026: asset, value, price/sqm, seasonality |
+| `sample_investors.csv` | 200 | Investor profiles: type, sector, capital range, risk, horizon |
+| `sample_communities.csv` | 90 | Community metrics: population, occupancy, services, mobility, experience |
+| `sample_listings.csv` | 6,000 | Residential rent/buy listings with lat/long (portal-style) |
 
-All data is **synthetic** — generated for this challenge, containing no real personal or commercial information. Column definitions in [`docs/datasets.md`](docs/datasets.md). You're welcome to bring your own public datasets too.
+Everything keys on `district`, so the datasets join cleanly; `sample_listings.csv` carries its own coordinates for map work. All data is **synthetic** — generated for this challenge (regenerate/tweak via [`datagen/generate.py`](datagen/)), containing no real personal or commercial information. Column definitions in [`docs/datasets.md`](docs/datasets.md). You're welcome to bring your own public datasets too.
+
+> 🎁 **Bonus — real live data:** want messy, real Abu Dhabi listings? The [`live-data-connector`](examples/live-data-connector/) example pulls them from eVoost's UAE data API. Optional and advanced — the synthetic data above is your guaranteed foundation. API key is in Discord (not in this repo).
 
 ## How to submit
 
