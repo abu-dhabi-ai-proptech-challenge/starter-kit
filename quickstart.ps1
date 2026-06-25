@@ -1,4 +1,4 @@
-# Abu Dhabi AI PropTech Challenge — one command to a running AI agent (Windows).
+# Abu Dhabi AI PropTech Challenge - one command to a running AI agent (Windows).
 #
 #   powershell -ExecutionPolicy Bypass -File .\quickstart.ps1
 #
@@ -7,15 +7,13 @@
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
-function Fail-WithHelp($msg) {
+function Show-Fallback {
     Write-Host ""
-    Write-Host "X $msg"
-    Write-Host ""
-    Write-Host "Windows fallback — if setup keeps fighting you, don't lose time:"
-    Write-Host "  - GitHub Codespaces (zero local setup): open this repo -> Code -> Codespaces"
+    Write-Host "Windows fallback - if setup keeps fighting you, do not lose time:"
+    Write-Host "  - GitHub Codespaces (zero local setup): open this repo, Code, Codespaces"
     Write-Host "  - Google Colab: upload the notebook in notebooks\ and run there"
-    Write-Host "  - WSL: 'wsl --install', then use the bash quickstart (./quickstart.sh)"
-    Write-Host "  - Long-path errors? Run as admin: 'git config --system core.longpaths true'"
+    Write-Host "  - WSL: run 'wsl --install', then use the bash quickstart (./quickstart.sh)"
+    Write-Host "  - Long-path errors: run as admin 'git config --system core.longpaths true'"
     Write-Host "  - Stuck? Ask in Discord #help-desk: https://discord.gg/jy3QDxQ3jK"
     exit 1
 }
@@ -33,27 +31,27 @@ foreach ($candidate in @("py", "python", "python3")) {
     }
 }
 if (-not $python) {
-    Fail-WithHelp "Python 3.10+ not found. Install it from https://python.org (tick 'Add Python to PATH') and retry."
+    Write-Host "X Python 3.10+ not found. Install it from https://python.org (tick Add Python to PATH) and retry."
+    Show-Fallback
 }
 
 Write-Host "- Creating virtualenv (.venv)..."
 & $python @pyargs -m venv .venv
-if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Could not create the virtualenv." }
+if ($LASTEXITCODE -ne 0) { Write-Host "X Could not create the virtualenv."; Show-Fallback }
 
-# Absolute path to the venv's Python — a relative path breaks once we change
-# directory into the example, and pwsh won't resolve "..\..\.venv\..." as a program.
+# Absolute path to the venv Python; a relative path breaks after we change directory.
 $venvPy = Join-Path $PSScriptRoot ".venv\Scripts\python.exe"
-if (-not (Test-Path $venvPy)) { Fail-WithHelp "Virtualenv Python not found at $venvPy." }
+if (-not (Test-Path $venvPy)) { Write-Host "X Virtualenv Python not found at $venvPy."; Show-Fallback }
 
 Write-Host "- Installing dependencies (pandas, matplotlib, jupyter)..."
 & $venvPy -m pip install --quiet --upgrade pip
-if ($LASTEXITCODE -ne 0) { Fail-WithHelp "pip could not upgrade itself." }
+if ($LASTEXITCODE -ne 0) { Write-Host "X pip could not upgrade itself."; Show-Fallback }
 & $venvPy -m pip install --quiet pandas matplotlib jupyter
-if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependency install failed (often a Windows long-path issue)." }
+if ($LASTEXITCODE -ne 0) { Write-Host "X Dependency install failed (often a Windows long-path issue)."; Show-Fallback }
 
-# Verify the key import actually works before claiming success.
+# Verify the imports actually work before claiming success.
 & $venvPy -c "import pandas, matplotlib" 2>$null
-if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependencies installed but won't import — the environment is not usable." }
+if ($LASTEXITCODE -ne 0) { Write-Host "X Dependencies installed but will not import; the environment is not usable."; Show-Fallback }
 
 Write-Host "- Running the Land Intelligence example agent..."
 Write-Host ""
@@ -61,14 +59,12 @@ Push-Location examples\land-intelligence-agent
 & $venvPy main.py
 $exampleExit = $LASTEXITCODE
 Pop-Location
-if ($exampleExit -ne 0) { Fail-WithHelp "The example agent did not run cleanly." }
+if ($exampleExit -ne 0) { Write-Host "X The example agent did not run cleanly."; Show-Fallback }
 
-Write-Host @"
-
-OK - You're set. Next moves:
-
-  - Explore the data:     .venv\Scripts\jupyter notebook notebooks\explore_sample_data.ipynb
-  - Try the other agents: examples\investment-matching-agent  -  examples\decision-copilot
-  - Build a web UI:       https://github.com/abu-dhabi-ai-proptech-challenge/project-template
-  - Stuck? Discord:       https://discord.gg/jy3QDxQ3jK
-"@
+Write-Host ""
+Write-Host "OK - You're set. Next moves:"
+Write-Host ""
+Write-Host "  - Explore the data:     .venv\Scripts\jupyter notebook notebooks\explore_sample_data.ipynb"
+Write-Host "  - Try the other agents: examples\investment-matching-agent  and  examples\decision-copilot"
+Write-Host "  - Build a web UI:       https://github.com/abu-dhabi-ai-proptech-challenge/project-template"
+Write-Host "  - Stuck? Discord:       https://discord.gg/jy3QDxQ3jK"
