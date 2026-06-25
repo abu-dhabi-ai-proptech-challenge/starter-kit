@@ -11,7 +11,7 @@
 ### 1. Get your project into a repo
 
 - Use your own repo, or generate one from the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) ("Use this template" button).
-- Make it **public** if you can. If it must stay private, add the organizer account as a collaborator so judges can review it.
+- Make it **public** if you can. If it must stay private, add `@evoost-judge` as a collaborator so judges can review it.
 - Make sure the README explains how to run it.
 
 ### 2. Prepare your links

@@ -40,20 +40,25 @@ Write-Host "- Creating virtualenv (.venv)..."
 & $python @pyargs -m venv .venv
 if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Could not create the virtualenv." }
 
+# Absolute path to the venv's Python — a relative path breaks once we change
+# directory into the example, and pwsh won't resolve "..\..\.venv\..." as a program.
+$venvPy = Join-Path $PSScriptRoot ".venv\Scripts\python.exe"
+if (-not (Test-Path $venvPy)) { Fail-WithHelp "Virtualenv Python not found at $venvPy." }
+
 Write-Host "- Installing dependencies (pandas, matplotlib, jupyter)..."
-& .\.venv\Scripts\python.exe -m pip install --quiet --upgrade pip
+& $venvPy -m pip install --quiet --upgrade pip
 if ($LASTEXITCODE -ne 0) { Fail-WithHelp "pip could not upgrade itself." }
-& .\.venv\Scripts\python.exe -m pip install --quiet pandas matplotlib jupyter
+& $venvPy -m pip install --quiet pandas matplotlib jupyter
 if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependency install failed (often a Windows long-path issue)." }
 
 # Verify the key import actually works before claiming success.
-& .\.venv\Scripts\python.exe -c "import pandas, matplotlib" 2>$null
+& $venvPy -c "import pandas, matplotlib" 2>$null
 if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependencies installed but won't import — the environment is not usable." }
 
 Write-Host "- Running the Land Intelligence example agent..."
 Write-Host ""
 Push-Location examples\land-intelligence-agent
-& ..\..\.venv\Scripts\python.exe main.py
+& $venvPy main.py
 $exampleExit = $LASTEXITCODE
 Pop-Location
 if ($exampleExit -ne 0) { Fail-WithHelp "The example agent did not run cleanly." }

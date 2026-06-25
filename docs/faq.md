@@ -37,7 +37,7 @@ Strongly encouraged — Cursor is co-hosting, and there's a **Best Use of Cursor
 Open an Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) repo using the **Project Submission** form, before the deadline. Full details in the [submission guide](submission-guide.md).
 
 **Does my repo have to be public?**
-Public is preferred. Private works if you grant the organizer account access.
+Public is preferred. Private works if you grant access to `@evoost-judge`.
 
 **Do I demo live?**
 No — with a full room, judging is from your submission. Include a working deployed link (ideal — judges will try it) or a 2–3 minute screen recording as a fallback. A deployed link is best.
