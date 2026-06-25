@@ -11,6 +11,9 @@ No. The example agents run with zero setup and no API keys, and mentors are avai
 **What should I bring?**
 A laptop, charger, and a development environment you're comfortable in. Wi-Fi, food, and power are provided at Hub71.
 
+**Can I take part remotely?**
+No — the Challenge is fully in-person at Hub71. There is no remote or hybrid option; every team member must attend on-site.
+
 **Can I start building before the event?**
 You can think, sketch, and explore the datasets in advance. The prototype itself is built on the day.
 
