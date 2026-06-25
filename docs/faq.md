@@ -39,8 +39,8 @@ Open an Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-ch
 **Does my repo have to be public?**
 Public is preferred. Private works if you grant the organizer account access.
 
-**What if my demo isn't deployed?**
-A 2–3 minute screen recording is an accepted fallback. A live deployed link is better.
+**Do I demo live?**
+No — with a full room, judging is from your submission. Include a working deployed link (ideal — judges will try it) or a 2–3 minute screen recording as a fallback. A deployed link is best.
 
 **Can we submit to two tracks?**
 No — one submission, one track. Pick the track that names your primary user.
@@ -53,8 +53,8 @@ Typo and broken-link fixes only. Substantive post-deadline changes aren't consid
 **How is judging scored?**
 Five equally weighted criteria — problem & relevance, technical execution, use of AI, demo quality, potential impact. See [judging criteria](judging-criteria.md).
 
-**How long is the demo?**
-3 minutes, plus up to 2 minutes of judge Q&A.
+**How long should my demo be?**
+There's no live demo. Make your deployed tool obvious to use, or keep your video under 3 minutes to the “aha”. No live Q&A.
 
 **What are the award categories?**
 Best Overall, one award per track, and Best Use of Cursor.

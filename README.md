@@ -17,7 +17,7 @@ This repo is your starting point: the challenge brief, the tracks, synthetic dat
 | **Venue** | Hub71, Abu Dhabi |
 | **Hosts** | Cursor × eVoost AI |
 | **Teams** | 1–3 people |
-| **Deliverable** | Working prototype + 3-minute demo |
+| **Deliverable** | Working prototype + demo (deployed link or 2–3 min video) |
 | **Submission** | GitHub Issue in the [`submissions`](https://github.com/abu-dhabi-ai-proptech-challenge/submissions) repo |
 
 ## Challenge tracks

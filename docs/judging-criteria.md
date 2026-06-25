@@ -28,9 +28,9 @@ Is AI doing real work, or decorating the UI?
 
 ## 4. Demo quality (20)
 
-Did your 3 minutes land?
+Does your submitted demo make it click?
 
-- 17–20: Clear story, live working demo, the "aha" moment is unmissable
+- 17–20: Clear story; a deployed tool that's obvious to use, or a tight video; the "aha" lands without you explaining it live
 - 10–16: Understandable demo with some friction
 - 0–9: Confusing, over time, or no working demo
 
@@ -45,7 +45,7 @@ Could this matter beyond today?
 ## How judging works
 
 1. Submissions close at the announced deadline — only Issues submitted in time are judged.
-2. Each team demos for **3 minutes**, followed by up to 2 minutes of judge Q&A.
+2. Each team is judged from its submission — deployed link, demo video, and repo. There is no live demo or Q&A.
 3. Judges score independently; scores are averaged.
 4. Track winners are the top-scoring projects within each track; **Best Overall** is the top score across all tracks.
 5. **Best Use of Cursor** is awarded by the Cursor team for the most impressive development workflow.

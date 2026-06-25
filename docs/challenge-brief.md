@@ -31,7 +31,7 @@ See [`tracks.md`](tracks.md) for detailed prompts and example ideas per track.
 | 12:35 | Challenge briefing |
 | 13:00 | Hacking begins |
 | 16:30 | Submission deadline |
-| 17:00 | 3-minute demos + judging |
+| 16:30–17:45 | Judging — judges review your submission |
 | 17:45 | Awards, then networking until 18:00 |
 
 Same agenda as the website; any changes are announced at the venue and on Discord (https://discord.gg/jy3QDxQ3jK).
@@ -51,7 +51,7 @@ Same agenda as the website; any changes are announced at the venue and on Discor
 - A focused problem, clearly framed
 - A prototype that actually runs and shows AI doing real work
 - Honest use of data — synthetic is fine, fabricated results are not
-- A demo that lands in under 3 minutes
+- A demo — a deployed link or a tight video — that lands in under 3 minutes
 
 ## Judging
 
