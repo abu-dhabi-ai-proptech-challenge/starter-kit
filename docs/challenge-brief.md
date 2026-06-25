@@ -39,7 +39,7 @@ Same agenda as the website; any changes are announced at the venue and on Discor
 ## Rules
 
 - **Build on the day.** You may arrive with ideas, sketches, and familiarity with the data, but the prototype is built during the event. Standard libraries, frameworks, and your own prior open-source utilities are fine.
-- **Teams of 2–5.** Solo builders can form teams at kickoff.
+- **Teams of 1–3.** Solo builders can form teams at kickoff.
 - **Any stack.** Use the [`project-template`](../examples/) and [example agents](../examples/) if helpful, or bring your own stack entirely.
 - **Any model.** Hosted APIs, open-weight models, local models — all fine. The example code runs without any API keys.
 - **Synthetic data provided.** Use the datasets in [`data/`](../data/), bring public datasets, or generate your own. No scraping of private or personal data.

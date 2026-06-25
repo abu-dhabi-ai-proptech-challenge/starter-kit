@@ -3,7 +3,7 @@
 ## Event
 
 **Do I need a team?**
-Teams are 2–5 people. If you register solo, you can form or join a team at kickoff — organizers will help match you.
+Teams are 1–3 people. If you register solo, you can form or join a team at kickoff — organizers will help match you.
 
 **Do I need to be an AI expert?**
 No. The example agents run with zero setup and no API keys, and mentors are available all day. Strong product, design, and domain thinking matter as much as model expertise.
