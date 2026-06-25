@@ -7,6 +7,19 @@
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 
+function Fail-WithHelp($msg) {
+    Write-Host ""
+    Write-Host "X $msg"
+    Write-Host ""
+    Write-Host "Windows fallback — if setup keeps fighting you, don't lose time:"
+    Write-Host "  - GitHub Codespaces (zero local setup): open this repo -> Code -> Codespaces"
+    Write-Host "  - Google Colab: upload the notebook in notebooks\ and run there"
+    Write-Host "  - WSL: 'wsl --install', then use the bash quickstart (./quickstart.sh)"
+    Write-Host "  - Long-path errors? Run as admin: 'git config --system core.longpaths true'"
+    Write-Host "  - Stuck? Ask in Discord #help-desk: https://discord.gg/jy3QDxQ3jK"
+    exit 1
+}
+
 # Find a real Python 3.10+ (the Microsoft Store stub fails this check safely)
 $python = $null
 $pyargs = @()
@@ -20,22 +33,30 @@ foreach ($candidate in @("py", "python", "python3")) {
     }
 }
 if (-not $python) {
-    Write-Host "X Python 3.10+ not found. Install it from https://python.org (tick 'Add Python to PATH') and retry."
-    exit 1
+    Fail-WithHelp "Python 3.10+ not found. Install it from https://python.org (tick 'Add Python to PATH') and retry."
 }
 
 Write-Host "- Creating virtualenv (.venv)..."
 & $python @pyargs -m venv .venv
+if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Could not create the virtualenv." }
 
 Write-Host "- Installing dependencies (pandas, matplotlib, jupyter)..."
 & .\.venv\Scripts\python.exe -m pip install --quiet --upgrade pip
+if ($LASTEXITCODE -ne 0) { Fail-WithHelp "pip could not upgrade itself." }
 & .\.venv\Scripts\python.exe -m pip install --quiet pandas matplotlib jupyter
+if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependency install failed (often a Windows long-path issue)." }
+
+# Verify the key import actually works before claiming success.
+& .\.venv\Scripts\python.exe -c "import pandas, matplotlib" 2>$null
+if ($LASTEXITCODE -ne 0) { Fail-WithHelp "Dependencies installed but won't import — the environment is not usable." }
 
 Write-Host "- Running the Land Intelligence example agent..."
 Write-Host ""
 Push-Location examples\land-intelligence-agent
 & ..\..\.venv\Scripts\python.exe main.py
+$exampleExit = $LASTEXITCODE
 Pop-Location
+if ($exampleExit -ne 0) { Fail-WithHelp "The example agent did not run cleanly." }
 
 Write-Host @"
 

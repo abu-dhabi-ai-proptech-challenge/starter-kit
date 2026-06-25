@@ -21,7 +21,7 @@ Land is the city's base layer, but raw parcel data — zoning codes, sizes, stat
 
 **Data to use**
 - `sample_parcels.csv` — the core: `development_potential_score`, `current_status` (filter `vacant`), `infrastructure_score`, `estimated_value_aed`, `recommended_use`
-- `districts.csv` — base price/sqm + centroid per district · `sample_transactions.csv` — real comps for valuation
+- `districts.csv` — base price/sqm + centroid per district · `sample_transactions.csv` — synthetic comps for valuation
 - `osm_amenities.csv` (**real** OSM data) — what's actually around a parcel, by coordinates
 
 **Example code:** [`examples/land-intelligence-agent/`](../examples/land-intelligence-agent/) (runs with no API key)
@@ -45,7 +45,7 @@ Investors have mandates; cities have assets. Matching them today is manual, slow
 
 **Data to use**
 - `sample_investors.csv` — mandates: `preferred_sector`, `preferred_district`, `capital_range_aed`, `risk_profile`, `investment_horizon`
-- `sample_transactions.csv` — **5,000 rows, a real 2023–2026 time series with seasonality** (ideal for forecasting/momentum)
+- `sample_transactions.csv` — **5,000 rows, a synthetic 2023–2026 time series with seasonality** (ideal for forecasting/momentum)
 - `sample_listings.csv` — 6,000 rent/buy listings · `districts.csv` — yields & base prices · `sample_parcels.csv`
 - 🎁 **Bonus:** real live listings via the [`live-data-connector`](../examples/live-data-connector/)
 

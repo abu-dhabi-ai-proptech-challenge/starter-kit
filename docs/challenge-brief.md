@@ -28,8 +28,10 @@ See [`tracks.md`](tracks.md) for detailed prompts and example ideas per track.
 | Time (GST) | What happens |
 |---|---|
 | 12:00 | Doors, registration, team formation |
+| 12:20 | Opening remarks |
 | 12:35 | Challenge briefing |
 | 13:00 | Hacking begins |
+| 14:30 | Mentor check-ins |
 | 16:30 | Submission deadline |
 | 16:30–17:45 | Judging — judges review your submission |
 | 17:45 | Awards, then networking until 18:00 |
@@ -40,7 +42,7 @@ Same agenda as the website; any changes are announced at the venue and on Discor
 
 - **Build on the day.** You may arrive with ideas, sketches, and familiarity with the data, but the prototype is built during the event. Standard libraries, frameworks, and your own prior open-source utilities are fine.
 - **Teams of 1–3.** Solo builders can form teams at kickoff.
-- **Any stack.** Use the [`project-template`](../examples/) and [example agents](../examples/) if helpful, or bring your own stack entirely.
+- **Any stack.** Use the [`project-template`](https://github.com/abu-dhabi-ai-proptech-challenge/project-template) and [example agents](../examples/) if helpful, or bring your own stack entirely.
 - **Any model.** Hosted APIs, open-weight models, local models — all fine. The example code runs without any API keys.
 - **Synthetic data provided.** Use the datasets in [`data/`](../data/), bring public datasets, or generate your own. No scraping of private or personal data.
 - **Demo or it didn't happen.** Judging is based on what works in your demo, not what's on your roadmap.
